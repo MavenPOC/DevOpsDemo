@@ -12,7 +12,7 @@
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
-			<value>${param}</value>
+			<value>WEB-INF/${param}</value>
 		</property>
 		<property name="suffix">
 			<value>.jsp</value>
