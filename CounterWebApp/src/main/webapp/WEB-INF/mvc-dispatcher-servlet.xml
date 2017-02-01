@@ -11,8 +11,9 @@
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property environment="env" />
 		<property name="prefix">
-			<value>${param}</value>
+			<value>${env.param}</value>
 		</property>
 		<property name="suffix">
 			<value>.jsp</value>
