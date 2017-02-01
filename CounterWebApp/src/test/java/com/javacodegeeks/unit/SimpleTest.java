@@ -15,6 +15,6 @@ public class SimpleTest {
 		SampleExample example = new SampleExample();
 		example.addInteger(10);
 		example.addInteger(100);
-		Assert.assertEquals(example.getSize(), System.getProperty("param"));
+		Assert.assertEquals(example.getSize(), Integer.parseInt(System.getProperty("param")));
 	}
 }
